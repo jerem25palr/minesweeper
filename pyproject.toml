@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minesweeper"
+version = "0.1.0"
+description = "Un jeu de démineur en Python"
+dependencies = [
+    "pytest"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"

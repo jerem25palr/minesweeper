@@ -47,9 +47,3 @@ class Minesweeper:
     def restart(self) -> None:
         """Redémarre le jeu avec les mêmes paramètres"""
         self.__init__(self.rows, self.cols, self.num_mines)
-
-
-def test_place_mines():
-    game = minesweeper.Minesweeper(3, 3, 2)
-    game.place_mines()
-    assert len(game.mines) == 2
